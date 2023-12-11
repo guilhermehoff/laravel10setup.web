@@ -1,5 +1,5 @@
 
-# Setup Docker Com Laravel 10 e  PHP 8.1
+# Setup Docker Com Laravel 10 e  PHP 8.2
 
 ### Passo a passo
 - Baixe o .Zip do projeto
@@ -27,9 +27,9 @@ LOG_LEVEL=debug
 DB_CONNECTION=mysql
 DB_HOST=mysql
 DB_PORT=3306
-DB_DATABASE=sistema_gestao
-DB_USERNAME=root
-DB_PASSWORD=root
+DB_DATABASE=banco
+DB_USERNAME=user
+DB_PASSWORD=password
 
 BROADCAST_DRIVER=log
 CACHE_DRIVER=file
@@ -77,7 +77,7 @@ docker-compose up -d
 
 Acesse o container app
 ```sh
-docker-compose exec app bash
+docker exec -it [container_id] sh
 ```
 
 
@@ -94,7 +94,4 @@ php artisan key:generate
 
 
 Acesse o projeto
-[http://localhost:8989](http://localhost:8989)
-
-
-github: https://github.com/VictorPadovan1997/setup-docker-laravel-10
+[http://localhost:9000](http://localhost:9000)
